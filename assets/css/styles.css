@@ -639,4 +639,106 @@ a {
 
 .news__list {
     max-width: 49%;
+    display: flex;
+    gap: 30px;
+}
+
+.news__item {
+    flex: 1;
+    box-shadow: 5px 20px 50px 20px #0000000D;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.news__item:hover .news__item-body {
+    border-color: #fff;
+}
+
+.news__item-body {
+    padding: 18px 22px 22px 22px;
+    border: 1px solid #E8EBEE;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    background: #fff;
+    transition: 0.25s;
+
+}
+
+.news__item-heading {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.63;
+    color: var(--primary-color);
+}
+
+.news__item-desc {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.72;
+    letter-spacing: 0%;
+    color: #575F66;
+}
+
+.news__item-readmore {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #2E80CE;
+}
+
+.news__item-readmore:hover {
+    text-shadow: 0.5px 0 0 currentColor;
+    color: #10375C;
+}
+
+.news__img-thumb {
+    width: 100%;
+    display: block;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.appointment {
+    margin-top: 85px;
+}
+
+.appointment__content {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #F6FBFF;
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.appointment__heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 136px;
+    height: 2px;
+    background-color: #2E80CE;
+}
+
+.appointment__desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #575F66;
+}
+
+.appointment__btn {
+    margin-top: 38px;
 }
